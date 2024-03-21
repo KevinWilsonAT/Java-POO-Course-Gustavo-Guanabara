@@ -10,8 +10,8 @@
   Softwares Utilizados:
 </h2>
 
-![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?logo=apachenetbeanside&logoColor=fff&style=for-the-badge)
+<img src="https://img.shields.io/badge/NetBeans-1B6AC6?logo=apachenetbeanside&logoColor=fff&style=for-the-badge"> <img src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=windows&logoColor=white" title="Experiência com Office: 6/10">
 
 ### Linguagens do repositório:
 
-<img src="https://img.shields.io/badge/Java-B07219?style=for-the-badge"><!-- -->
+<img src="https://img.shields.io/badge/Java-B07219?style=for-the-badge">
