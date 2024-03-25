@@ -4,7 +4,6 @@
     Exercícios feitos na sequência de aulas de programação em Linguagem Java POO (com Programação Orientada a Objetos) pelo professor Gustavo Guanabara do canal 
    <a href="https://www.youtube.com/@CursoemVideo">Curso Em Video</a>
   </p>
-</div>
 
 <h2 align="left">
   Softwares Utilizados:
