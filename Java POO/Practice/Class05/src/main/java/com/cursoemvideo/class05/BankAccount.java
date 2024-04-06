@@ -15,13 +15,22 @@ public class BankAccount {
     private float balance;
     private boolean status;
     
+    public void currentStatus(){
+        System.out.println("==================================");
+        System.out.println("Account: " + this.getAccountNum());
+        System.out.println("Type: " + this.getType());
+        System.out.println("Owner" + this.getOwner());
+        System.out.println("Balance: " + this.getBalance());
+        System.out.println("Status: " + this.getStatus());
+    }
+    
     public BankAccount(){
-        setBalance(0);
-        setStatus(false);
+        this.setBalance(0);
+        this.setStatus(false);
     }
 
     public int getAccountNum() {
-        return accountNum;
+        return this.accountNum;
     }
 
     public void setAccountNum(int n) {
@@ -52,7 +61,7 @@ public class BankAccount {
         this.balance = b;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
@@ -61,32 +70,34 @@ public class BankAccount {
     }
     
     public void openAccount(String t){
-        setType(t);
-        setStatus(true);
+        this.setType(t);
+        this.setStatus(true);
         
         if(t == "CA"){
-            setBalance(50);
+            this.setBalance(50);
         }
         else if (t == "SA"){
-            setBalance(150);
+            this.setBalance(150);
         }
     }
     
     public void closeAccount(){
-        if(getBalance() > 0){
+        if(this.getBalance() > 0){
             System.out.print("This account is not empty to be closed.");
         }
-        else if(getBalance() < 0){
+        else if(this.getBalance() < 0){
             System.out.print("This account cannot be closed in debt.");
         }
         else{
-            setStatus(false);
+            this.setStatus(false);
+            System.out.println("Account closed successfully!");
         }
     }
     
     public void deposit(float v){
-        if(isStatus() == true){
-            setBalance(getBalance() + v);
+        if (this.getStatus()){
+            this.setBalance(this.getBalance() + v);
+            System.out.println("Deposited successfully in the account of " + this.getOwner());
         }
         else{
             System.out.print("Cannot deposit. Inexistent or Closed Account");
@@ -94,9 +105,10 @@ public class BankAccount {
     }
     
     public void withdraw(float v){
-        if(isStatus() == true){
-            if(getBalance() >= v){
-                setBalance(getBalance() - v);
+        if(this.getStatus() == true){
+            if(this.getBalance() >= v){
+                this.setBalance(this.getBalance() - v);
+                System.out.println("Withdrawed successfully from the account of " + this.getOwner());
             }
             else{
                 System.out.print("Insufficient Money to perform a withdrawal");
@@ -109,16 +121,16 @@ public class BankAccount {
     
     public void payMonth(){
         float m = 0;
-        if(getType() == "CA"){
+        if(this.getType() == "CA"){
             m = 12;
         }
-        else if(getType() == "SA"){
+        else if(this.getType() == "SA"){
             m = 20;
         }
         
-        if(isStatus() == true){
-            if(getBalance() >= m){
-                setBalance(getBalance() - m);
+        if(this.getStatus()){
+            if(this.getBalance() >= m){
+                this.setBalance(this.getBalance() - m);
             }
             else{
                 System.out.print("Insufficient Money to do the monthly payments");
