@@ -30,7 +30,7 @@ public class Fighter {
     }
     
     public void status(){
-        System.out.println("Category: ");
+        System.out.println("Category: " + this.getCategory());
         System.out.println("Wins: " + this.getWins());
         System.out.println("Losses: " + this.getLosses());
         System.out.println("Draws: " + this.getDraws());
