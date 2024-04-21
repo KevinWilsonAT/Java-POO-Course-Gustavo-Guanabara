@@ -14,6 +14,6 @@ public class Class07Fighting {
     public static void main(String[] args) {
         Fighter f = new Fighter("Player1", "France", 31, 2.00f, 65.0f, 11, 2, 1);
         
-        f.display();
+        f.status();
     }
 }
