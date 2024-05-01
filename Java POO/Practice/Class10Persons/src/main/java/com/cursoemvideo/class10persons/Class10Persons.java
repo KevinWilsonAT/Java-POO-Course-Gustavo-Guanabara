@@ -1,13 +1,12 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
 package com.cursoemvideo.class10persons;
 
 /**
  *
- * @author kevin
+ * @author DELL
  */
 public class Class10Persons {
 
@@ -30,7 +29,7 @@ public class Class10Persons {
         p3.receiveAug(550.20f);
         p4.changeWork();
         p2.cancelReg();
-        
+
         System.out.println(p1.toString());
         System.out.println(p2.toString());
         System.out.println(p3.toString());

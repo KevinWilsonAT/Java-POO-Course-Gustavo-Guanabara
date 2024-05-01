@@ -6,9 +6,9 @@ package com.cursoemvideo.class10persons;
 
 /**
  *
- * @author kevin
+ * @author DELL
  */
-public class Employee extends Person {
+public class Employee extends Person{
     private String sector;
     private boolean working;
     

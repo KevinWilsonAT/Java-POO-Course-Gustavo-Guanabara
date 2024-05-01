@@ -6,10 +6,9 @@ package com.cursoemvideo.class10persons;
 
 /**
  *
- * @author kevin
+ * @author DELL
  */
 public class Teacher extends Person{
-
     private String specialty;
     private  float salary;
     

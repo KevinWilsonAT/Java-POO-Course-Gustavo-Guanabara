@@ -6,10 +6,9 @@ package com.cursoemvideo.class10persons;
 
 /**
  *
- * @author kevin
+ * @author DELL
  */
 public class Person {
-    
     private String name;
     private int age;
     private String gender;
