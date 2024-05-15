@@ -14,7 +14,7 @@ public abstract class Person {
     private int age;
     private String gender;
 
-    public void makBirthday() {
+    public void makeBirthday() {
         this.age++;
     }
     
