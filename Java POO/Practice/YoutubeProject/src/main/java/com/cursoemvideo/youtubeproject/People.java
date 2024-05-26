@@ -59,8 +59,12 @@ public abstract class People {
 
     @Override
     public String toString() {
-        return "People{" + "name=" + name + ", age=" + age + ", gender=" + gender +
-                ", experience=" + experience + '}';
+        return "         People{" +
+               "\n            name: " + name +
+               "\n            age: " + age +
+               "\n            gender: " + gender +
+               "\n            experience: " + experience +
+               "\n          }\n";
     }
         
 }

@@ -40,7 +40,9 @@ public class Pupil extends People {
 
     @Override
     public String toString() {
-        return "Pupil{" + super.toString() + "login=" + login + ", totWatched=" + totWatched + '}';
+        return "      Pupil{\n" + super.toString() +
+               "         login: " + login +
+               "\n         totWatched: " + totWatched + "\n      }";
     }
     
 }

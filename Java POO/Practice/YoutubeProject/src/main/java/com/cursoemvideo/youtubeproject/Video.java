@@ -37,6 +37,8 @@ public class Video implements VideoActions{
     }
 
     public void setReview(int review) {
+        int newReview;
+        newReview = (int) ((this.review + review)/this.views);
         this.review = review;
     }
 
@@ -81,7 +83,13 @@ public class Video implements VideoActions{
 
     @Override
     public String toString() {
-        return "Video{" + "title=" + title + ", review=" + review + ", views=" + views + ", likes=" + likes + ", playing=" + playing + '}';
+        return "      Video{" +
+               "\n         title: " + title +
+               "\n         review: " + review +
+               "\n         views: " + views +
+               "\n         likes: " + likes +
+               "\n         playing: " + playing +
+               "\n      }";
     }
     
 }
